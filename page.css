@@ -1,0 +1,117 @@
+.text {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    border-radius: 50%;
+    margin-top: 20px;
+    display: inline-table;
+}
+
+.info {
+    height: 300px;
+    width: 30%;
+    margin-left: 35%;
+    border: 1px solid black;
+}
+
+table {
+    /* border: 1px solid black; */
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+td, tr {
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 25px;
+    width: 20%;
+}
+
+.container {
+  /* width: 95%; */
+  height: 250px;
+  margin-left: 5%;
+  margin-top: 2.5%;
+  /* border: 1px solid black; */
+}
+
+.patient_room {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+  margin-top: -180px;
+  margin-left: 60%;
+  /* border: 1px solid black; */
+  background-image: url(https://static.wikia.nocookie.net/cookierun/images/d/d6/Kingdom_vampire_icon.png/revision/latest/scale-to-width-down/128?cb=20210125213830);
+  background-size: cover;
+}
+
+.drugs {
+  color: red;
+}
+
+/* ---------- animation arrow ---------- */
+
+#arrowAnim1, #arrowAnim2 {
+    display: flex;
+    margin-left: 20%;
+    /* margin-top: -80px; */
+    align-items: center;
+  }
+  
+  .arrow {
+    width: 3vw;
+    height: 3vw;
+    border: 1vw solid;
+    border-color: black transparent transparent black;
+    transform: rotate(135deg);
+  }
+  
+  
+  .arrowSliding {
+    position: absolute;
+    -webkit-animation: slide 4s linear infinite; 
+            animation: slide 4s linear infinite;
+  }
+  
+.delay1 {
+  -webkit-animation-delay: 1s; 
+      animation-delay: 1s;
+}
+
+.delay2 {
+  -webkit-animation-delay: 2s; 
+    animation-delay: 2s;
+}
+  
+.delay3 {
+  -webkit-animation-delay: 3s; 
+    animation-delay: 3s;
+}
+
+@-webkit-keyframes slide {
+    0% { opacity:0; transform: translateX(-7vw); }	
+   20% { opacity:1; transform: translateX(-4vw); }	
+   80% { opacity:1; transform: translateX(4vw); }	
+  100% { opacity:0; transform: translateX(7vw); }	
+}
+@keyframes slide {
+    0% { opacity:0; transform: translateX(-7vw); }	
+   20% { opacity:1; transform: translateX(-4vw); }	
+   80% { opacity:1; transform: translateX(4vw); }	
+  100% { opacity:0; transform: translateX(7vw); }	
+}
