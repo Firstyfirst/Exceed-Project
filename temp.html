@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="temp.css">
+</head>
+<body>
+    <form action="" method="POST" id="room_number">
+        <label for="room">Room No. </label>
+        <input type="text" name="room" id="room">
+        <button class="my-btn submit-btn" type="submit">Submit !</button>
+    </form>
+    <div class="text" id="status">Status : </div>
+    <button class="my-btn arrow1-btn" onclick="myFunction1()">arrow 1</button>
+    <button class="my-btn arrow2-btn" onclick="myFunction2()">arrow 2</button>
+    <table>
+        <tr>
+            <td>
+                <div class="dot" id="dot_start"></div>
+                <h3>Start</h3>
+            </td>
+            <td id="arrow_box_1">
+                <div id="arrowAnim1">
+                    <div class="arrow"></div>
+                </div>
+            </td>
+            <td>
+                <span class="dot" id="dot_dest"></span>
+                <h3>Destination</h3>
+            </td>
+            <td id="arrow_box_2">
+                <div id="arrowAnim2">
+                    <div class="arrow"></div>
+                </div>
+            </td>
+            <td>
+                <span class="dot" id="dot_recieved"></span>
+                <h3>Received</h3>
+            </td>
+        </tr>
+    </table>
+    <div class="info" id="info"></div>
+    
+</body>
+<script src="page.js"></script>
+</html>

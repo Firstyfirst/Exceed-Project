@@ -1,0 +1,178 @@
+
+* {
+    font-family: Montserrat, sans-serif;
+}
+
+/* h3 {
+    color: white;
+    background-image: linear-gradient(90deg, rgb(218, 10, 218) 0%, rgb(75, 226, 75) 80%);
+    background-image: linear-gradient(90deg, rgb(41, 211, 41) 0%, rgb(143, 238, 143) 80%);
+    background-image: linear-gradient(90deg, rgb(41, 211, 41) 0%, rgb(143, 238, 143) 50%, rgb(41, 211, 41) 100%);
+    background-image: linear-gradient(90deg, rgb(118, 231, 118) 5%, rgb(218, 10, 218) 50%, rgb(118, 231, 118) 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}    */
+
+
+
+body {
+    /* background-color: lightblue; */
+    /* background: linear-gradient(180deg, rgba(197, 236, 248, 0.918) 0%, rgba(161, 161, 250, 0.938) 100%); */
+    background: linear-gradient(180deg, rgba(148, 217, 238, 0.918) 0%, rgba(197, 236, 248, 0.918) 100%);
+    /* background: linear-gradient(180deg, #2b5876 0%, #4e4376 100%); */
+}
+
+.my-btn {
+    /* width: 10%; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* padding: 7px 7px; */
+    /* margin: 0 10px;  */
+    /* font-size: medium; */
+}
+
+.my-btn:hover {
+    background-color:  #e9e6e6af;
+}
+
+.my-btn:active {
+    background-color:  rgba(250, 98, 225, 0.87);
+}
+
+
+/* .submit-btn:hover {
+    background-color:  #e9e6e6af;
+    color: white; 
+}
+
+.arrow1-btn:hover {
+    background-color:  #e9e6e6af;
+    color: white; 
+}
+
+.arrow2-btn:hover {
+    background-color:  #e9e6e6af;
+    color: white; 
+}  */
+
+
+
+
+.text {
+    font-size: 40px;
+    margin-left: 40%;
+    margin-top: 20px;
+    background-image: linear-gradient(90deg, rgb(218, 10, 218) 0%, rgb(75, 226, 75) 15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.dot {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    border-radius: 50%;
+    margin-top: 20px;
+    display: inline-table;
+}
+
+#dot_start {
+    background-color: pink;
+}
+
+.info {
+    height: 300px;
+    width: 30%;
+    margin-left: 35%;
+    border: 1px solid black;
+}
+
+table {
+    /* border: 1px solid black; */
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+td, tr {
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 25px;
+    width: 20%;
+}
+
+.container {
+  /* width: 95%; */
+  height: 250px;
+  margin-left: 5%;
+  margin-top: 2.5%;
+  /* border: 1px solid black; */
+}
+
+.patient_room {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+  margin-top: -180px;
+  margin-left: 60%;
+  border: 1px solid black;
+}
+
+/* ---------- animation arrow ---------- */
+
+#arrowAnim1, #arrowAnim2 {
+    display: flex;
+    margin-left: 20%;
+    /* margin-top: -80px; */
+    align-items: center;
+  }
+  
+  .arrow {
+    width: 3vw;
+    height: 3vw;
+    border: 1vw solid;
+    border-color: black transparent transparent black;
+    transform: rotate(135deg);
+  }
+  
+  
+  .arrowSliding {
+    position: absolute;
+    -webkit-animation: slide 4s linear infinite; 
+            animation: slide 4s linear infinite;
+  }
+  
+.delay1 {
+  -webkit-animation-delay: 1s; 
+      animation-delay: 1s;
+}
+
+.delay2 {
+  -webkit-animation-delay: 2s; 
+    animation-delay: 2s;
+}
+  
+.delay3 {
+  -webkit-animation-delay: 3s; 
+    animation-delay: 3s;
+}
+
+@-webkit-keyframes slide {
+    0% { opacity:0; transform: translateX(-7vw); }	
+   20% { opacity:1; transform: translateX(-4vw); }	
+   80% { opacity:1; transform: translateX(4vw); }	
+  100% { opacity:0; transform: translateX(7vw); }	
+}
+@keyframes slide {
+    0% { opacity:0; transform: translateX(-7vw); }	
+   20% { opacity:1; transform: translateX(-4vw); }	
+   80% { opacity:1; transform: translateX(4vw); }	
+  100% { opacity:0; transform: translateX(7vw); }	
+}
